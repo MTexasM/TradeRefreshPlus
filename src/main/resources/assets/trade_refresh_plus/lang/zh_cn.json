@@ -1,7 +1,6 @@
 {
   "key.categories.trade_refresh_plus": "交易刷新增强",
   "key.trade_refresh_plus.refresh": "刷新村民交易",
-  "mod.trade_refresh_plus.refresh_success": "村民交易已刷新",
   "mod.trade_refresh_plus.refresh_failed": "无法刷新 - 村民已经被交易过",
   "mod.trade_refresh_plus.favorite_item": "无法刷新收藏夹的物品"
 }
