@@ -1,0 +1,54 @@
+modLoader="neoforgemod"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+issueTrackerURL="https://github.com/MTexasM/TradeRefreshPlus/issues"
+showAsLibrary=false
+
+[[mods]]
+modId="${mod_id}"
+namespace="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+description="一个为 Minecraft 添加村民交易快速刷新功能的模组。支持快捷键快速刷新、长按连续刷新，并与 JEI、EMI、REI 联动，收藏夹物品无法刷新。"
+displayURL="https://github.com/MTexasM/TradeRefreshPlus"
+logoFile="assets/${mod_id}/icon.png"
+credits="参考了 Minecraft-LightLand/TradeRefresh、Mrbysco/Retraining、henkelmax/trade-cycling 等项目"
+authors="${mod_authors}"
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    mandatory=true
+    versionRange="${neo_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+# JEI (optional)
+[[dependencies.${mod_id}]]
+    modId="jei"
+    mandatory=false
+    versionRange="[19.0,)"
+    ordering="NONE"
+    side="CLIENT"
+
+# EMI (optional)
+[[dependencies.${mod_id}]]
+    modId="emi"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="CLIENT"
+
+# REI (optional)
+[[dependencies.${mod_id}]]
+    modId="roughlyenoughitems"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="CLIENT"
