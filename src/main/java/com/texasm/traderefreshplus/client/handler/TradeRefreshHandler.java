@@ -81,10 +81,6 @@ public class TradeRefreshHandler {
 
         // 重新生成交易
         villager.rerollUsingEffects();
-        
-        if (Config.SHOW_NOTIFICATION.get()) {
-            showNotification(Component.literal("§a村民交易已刷新"));
-        }
     }
 
     private static ItemStack checkFavoriteItems(MerchantOffers offers) {
